@@ -1,0 +1,31 @@
+/home/hustzyw/jdk1.8.0_191/bin/java -cp /home/hustzyw/xiaohu/ycsb-leveldbjni-binding-0.16.0/leveldbjni-binding/conf:/home/hustzyw/xiaohu/ycsb-leveldbjni-binding-0.16.0/conf:/home/hustzyw/xiaohu/ycsb-leveldbjni-binding-0.16.0/lib/core-0.16.0-SNAPSHOT.jar:/home/hustzyw/xiaohu/ycsb-leveldbjni-binding-0.16.0/lib/htrace-core4-4.1.0-incubating.jar:/home/hustzyw/xiaohu/ycsb-leveldbjni-binding-0.16.0/lib/jackson-mapper-asl-1.9.4.jar:/home/hustzyw/xiaohu/ycsb-leveldbjni-binding-0.16.0/lib/jackson-core-asl-1.9.4.jar:/home/hustzyw/xiaohu/ycsb-leveldbjni-binding-0.16.0/lib/HdrHistogram-2.1.4.jar:/home/hustzyw/xiaohu/ycsb-leveldbjni-binding-0.16.0/lib/leveldb-api-0.6.jar:/home/hustzyw/xiaohu/ycsb-leveldbjni-binding-0.16.0/lib/leveldbjni-binding-0.16.0-SNAPSHOT.jar:/home/hustzyw/xiaohu/ycsb-leveldbjni-binding-0.16.0/lib/novelsmjni.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.LevelDbJniClient -s -P workloads/workloada -p rocksdb.dir=/mnt/ssd/xiaohu/novelsm-count5m -load
+Command line: -db com.yahoo.ycsb.db.LevelDbJniClient -s -P workloads/workloada -p rocksdb.dir=/mnt/ssd/xiaohu/novelsm-count5m -load
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+FLAGS_use_existing_db: 0
+FLAGS_db_disk: /mnt/ssd/xiaohu/novelsm-count5m/
+FLAGS_db_mem:  /pmem/xiaohu/novelsm-count5m/
+FLAGS_nvm_buffer_size:  67108864
+FLAGS_num_levels:  2
+FLAGS_num_read_threads:  1
+
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2019-01-30 07:23:37:370 0 sec: 0 operations; est completion in 0 second 
+2019-01-30 07:23:47:332 10 sec: 339142 operations; 33910.81 current ops/sec; est completion in 2 minutes [INSERT: Count=339142, Max=498175, Min=9, Avg=27.22, 90=25, 99=44, 99.9=116, 99.99=1815] 
+2019-01-30 07:23:57:334 20 sec: 593668 operations; 25447.51 current ops/sec; est completion in 2 minutes [INSERT: Count=254588, Max=440063, Min=9, Avg=39.18, 90=21, 99=1166, 99.9=1229, 99.99=1865] 
+2019-01-30 07:24:07:331 30 sec: 730932 operations; 13730.52 current ops/sec; est completion in 2 minutes [INSERT: Count=137202, Max=441343, Min=9, Avg=69.68, 90=22, 99=1226, 99.9=1254, 99.99=3271] 
+2019-01-30 07:24:17:331 40 sec: 1010782 operations; 27985 current ops/sec; est completion in 2 minutes [INSERT: Count=279850, Max=434431, Min=9, Avg=35.14, 90=20, 99=56, 99.9=1224, 99.99=2223] 
+2019-01-30 07:24:27:332 50 sec: 1073431 operations; 6264.27 current ops/sec; est completion in 3 minutes [INSERT: Count=62650, Max=432895, Min=9, Avg=159.24, 90=1117, 99=1235, 99.9=2675, 99.99=4419] 
+2019-01-30 07:24:37:330 60 sec: 1295757 operations; 22234.82 current ops/sec; est completion in 2 minutes [INSERT: Count=222326, Max=440063, Min=9, Avg=43.84, 90=19, 99=1190, 99.9=1233, 99.99=3885] 
+2019-01-30 07:24:47:336 70 sec: 1314136 operations; 1836.98 current ops/sec; est completion in 3 minutes [INSERT: Count=18429, Max=48287, Min=12, Avg=539.18, 90=1226, 99=1252, 99.9=4159, 99.99=5467] 
+2019-01-30 07:24:57:331 80 sec: 1519808 operations; 20577.49 current ops/sec; est completion in 3 minutes [INSERT: Count=205622, Max=465407, Min=9, Avg=47.36, 90=21, 99=1193, 99.9=1239, 99.99=4351] 
+2019-01-30 07:25:07:330 90 sec: 1547923 operations; 2811.5 current ops/sec; est completion in 3 minutes [INSERT: Count=28152, Max=141567, Min=12, Avg=352.32, 90=1209, 99=1247, 99.9=4379, 99.99=6075] 
+2019-01-30 07:25:17:331 100 sec: 1743775 operations; 19585.2 current ops/sec; est completion in 3 minutes [INSERT: Count=195815, Max=436991, Min=9, Avg=49.87, 90=20, 99=1192, 99.9=1235, 99.99=5395] 
+2019-01-30 07:25:27:334 110 sec: 1751920 operations; 814.26 current ops/sec; est completion in 3 minutes [INSERT: Count=8145, Max=6979, Min=1098, Avg=1222.72, 90=1223, 99=1973, 99.9=5683, 99.99=6275] 
+2019-01-30 07:25:37:330 120 sec: 1967149 operations; 21529.36 current ops/sec; est completion in 3 minutes [INSERT: Count=215229, Max=461055, Min=9, Avg=45.24, 90=21, 99=1191, 99.9=1238, 99.99=5303] 
+2019-01-30 07:25:47:336 130 sec: 1975131 operations; 797.8 current ops/sec; est completion in 3 minutes [INSERT: Count=7982, Max=7915, Min=1106, Avg=1246.55, 90=1237, 99=3777, 99.9=7027, 99.99=7655] 
+2019-01-30 07:25:57:331 140 sec: 2189650 operations; 21462.63 current ops/sec; est completion in 3 minutes [INSERT: Count=214519, Max=466175, Min=9, Avg=45.39, 90=20, 99=1202, 99.9=1244, 99.99=4375] 
+2019-01-30 07:26:07:336 150 sec: 2197608 operations; 795.4 current ops/sec; est completion in 3 minutes [INSERT: Count=7958, Max=7911, Min=1106, Avg=1250.17, 90=1237, 99=4127, 99.9=6931, 99.99=7815] 
+2019-01-30 07:26:17:331 160 sec: 2368615 operations; 17109.25 current ops/sec; est completion in 2 minutes [INSERT: Count=171072, Max=430591, Min=9, Avg=57.08, 90=21, 99=1209, 99.9=1252, 99.99=4863] 

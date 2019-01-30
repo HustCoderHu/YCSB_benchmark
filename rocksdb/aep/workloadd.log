@@ -1,0 +1,47 @@
+/home/hustzyw/jdk1.8.0_191/bin/java -cp /home/hustzyw/xiaohu/ycsb-rocksdb-binding-0.15.0/rocksdb-binding/conf:/home/hustzyw/xiaohu/ycsb-rocksdb-binding-0.15.0/conf:/home/hustzyw/xiaohu/ycsb-rocksdb-binding-0.15.0/lib/core-0.15.0.jar:/home/hustzyw/xiaohu/ycsb-rocksdb-binding-0.15.0/lib/htrace-core4-4.1.0-incubating.jar:/home/hustzyw/xiaohu/ycsb-rocksdb-binding-0.15.0/lib/jackson-mapper-asl-1.9.4.jar:/home/hustzyw/xiaohu/ycsb-rocksdb-binding-0.15.0/lib/jackson-core-asl-1.9.4.jar:/home/hustzyw/xiaohu/ycsb-rocksdb-binding-0.15.0/lib/HdrHistogram-2.1.4.jar:/home/hustzyw/xiaohu/ycsb-rocksdb-binding-0.15.0/lib/jcip-annotations-1.0.jar:/home/hustzyw/xiaohu/ycsb-rocksdb-binding-0.15.0/lib/slf4j-api-1.7.25.jar:/home/hustzyw/xiaohu/ycsb-rocksdb-binding-0.15.0/lib/slf4j-simple-1.7.25.jar:/home/hustzyw/xiaohu/ycsb-rocksdb-binding-0.15.0/lib/rocksdb-binding-0.15.0.jar:/home/hustzyw/xiaohu/ycsb-rocksdb-binding-0.15.0/lib/fb-rocksdbjni-5.18.0.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.rocksdb.RocksDBClient -s -P our-nvm-workloads/workloadd -p rocksdb.dir=/pmem/ycsb-rocksdb-xiaohu -t
+Command line: -db com.yahoo.ycsb.db.rocksdb.RocksDBClient -s -P our-nvm-workloads/workloadd -p rocksdb.dir=/pmem/ycsb-rocksdb-xiaohu -t
+YCSB Client 0.15.0
+
+Loading workload...
+Starting test.
+[Thread-3] INFO com.yahoo.ycsb.db.rocksdb.RocksDBClient - RocksDB data dir: /pmem/ycsb-rocksdb-xiaohu
+2018-12-30 07:51:20:072 0 sec: 0 operations; est completion in 0 second 
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2018-12-30 07:51:30:015 10 sec: 1038442 operations; 103833.82 current ops/sec; est completion in 1 minute [READ: Count=986667, Max=134271, Min=0, Avg=7.32, 90=19, 99=32, 99.9=59, 99.99=123] [INSERT: Count=52238, Max=660, Min=4, Avg=8.53, 90=11, 99=21, 99.9=37, 99.99=83] 
+2018-12-30 07:51:40:019 20 sec: 2466865 operations; 142770.91 current ops/sec; est completion in 1 minute [READ: Count=1356583, Max=16511, Min=0, Avg=5.98, 90=18, 99=28, 99.9=34, 99.99=40] [INSERT: Count=71527, Max=37, Min=4, Avg=8.4, 90=11, 99=20, 99.9=23, 99.99=27] 
+2018-12-30 07:51:50:015 30 sec: 3973470 operations; 150720.79 current ops/sec; est completion in 46 seconds [READ: Count=1431241, Max=52959, Min=0, Avg=5.6, 90=18, 99=28, 99.9=35, 99.99=61] [INSERT: Count=75440, Max=81, Min=4, Avg=8.53, 90=11, 99=20, 99.9=25, 99.99=36] 
+2018-12-30 07:52:00:017 40 sec: 5477237 operations; 150331.6 current ops/sec; est completion in 34 seconds [READ: Count=1428234, Max=12447, Min=0, Avg=5.55, 90=18, 99=28, 99.9=34, 99.99=41] [INSERT: Count=75421, Max=2347, Min=4, Avg=8.88, 90=11, 99=20, 99.9=24, 99.99=33] 
+2018-12-30 07:52:10:016 50 sec: 7084688 operations; 160793.34 current ops/sec; est completion in 21 seconds [READ: Count=1527073, Max=11287, Min=0, Avg=5.15, 90=17, 99=27, 99.9=34, 99.99=38] [INSERT: Count=80610, Max=1151, Min=4, Avg=8.71, 90=11, 99=20, 99.9=23, 99.99=27] 
+2018-12-30 07:52:20:014 60 sec: 8758240 operations; 167371.94 current ops/sec; est completion in 9 second [READ: Count=1589910, Max=9975, Min=0, Avg=4.91, 90=16, 99=27, 99.9=33, 99.99=36] [INSERT: Count=83421, Max=251, Min=4, Avg=8.72, 90=11, 99=20, 99.9=23, 99.99=27] 
+2018-12-30 07:52:27:614 67 sec: 10000000 operations; 163389.47 current ops/sec; [READ: Count=1179319, Max=69887, Min=0, Avg=5.02, 90=16, 99=27, 99.9=34, 99.99=39] [CLEANUP: Count=1, Max=11775, Min=11768, Avg=11772, 90=11775, 99=11775, 99.9=11775, 99.99=11775] [INSERT: Count=62316, Max=34, Min=4, Avg=8.87, 90=11, 99=20, 99.9=23, 99.99=28] 
+[OVERALL], RunTime(ms), 67601
+[OVERALL], Throughput(ops/sec), 147926.805816482
+[TOTAL_GCS_PS_Scavenge], Count, 16
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 435
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.6434816053016967
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 16
+[TOTAL_GC_TIME], Time(ms), 435
+[TOTAL_GC_TIME_%], Time(%), 0.6434816053016967
+[READ], Operations, 9499027
+[READ], AverageLatency(us), 5.565455598768168
+[READ], MinLatency(us), 0
+[READ], MaxLatency(us), 134271
+[READ], 95thPercentileLatency(us), 22
+[READ], 99thPercentileLatency(us), 28
+[READ], Return=OK, 9499027
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 11772.0
+[CLEANUP], MinLatency(us), 11768
+[CLEANUP], MaxLatency(us), 11775
+[CLEANUP], 95thPercentileLatency(us), 11775
+[CLEANUP], 99thPercentileLatency(us), 11775
+[INSERT], Operations, 500973
+[INSERT], AverageLatency(us), 8.665868220443018
+[INSERT], MinLatency(us), 4
+[INSERT], MaxLatency(us), 2347
+[INSERT], 95thPercentileLatency(us), 13
+[INSERT], 99thPercentileLatency(us), 20
+[INSERT], Return=OK, 500973

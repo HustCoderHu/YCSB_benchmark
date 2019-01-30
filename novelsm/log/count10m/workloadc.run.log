@@ -1,0 +1,38 @@
+/home/hustzyw/jdk1.8.0_191/bin/java -cp /home/hustzyw/xiaohu/ycsb-leveldbjni-binding-0.16.0/leveldbjni-binding/conf:/home/hustzyw/xiaohu/ycsb-leveldbjni-binding-0.16.0/conf:/home/hustzyw/xiaohu/ycsb-leveldbjni-binding-0.16.0/lib/core-0.16.0-SNAPSHOT.jar:/home/hustzyw/xiaohu/ycsb-leveldbjni-binding-0.16.0/lib/htrace-core4-4.1.0-incubating.jar:/home/hustzyw/xiaohu/ycsb-leveldbjni-binding-0.16.0/lib/jackson-mapper-asl-1.9.4.jar:/home/hustzyw/xiaohu/ycsb-leveldbjni-binding-0.16.0/lib/jackson-core-asl-1.9.4.jar:/home/hustzyw/xiaohu/ycsb-leveldbjni-binding-0.16.0/lib/HdrHistogram-2.1.4.jar:/home/hustzyw/xiaohu/ycsb-leveldbjni-binding-0.16.0/lib/leveldb-api-0.6.jar:/home/hustzyw/xiaohu/ycsb-leveldbjni-binding-0.16.0/lib/leveldbjni-binding-0.16.0-SNAPSHOT.jar:/home/hustzyw/xiaohu/ycsb-leveldbjni-binding-0.16.0/lib/novelsmjni.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.LevelDbJniClient -P workloads/workloadc -p rocksdb.dir=/mnt/ssd/xiaohu/novelsm -t
+Command line: -db com.yahoo.ycsb.db.LevelDbJniClient -P workloads/workloadc -p rocksdb.dir=/mnt/ssd/xiaohu/novelsm -t
+YCSB Client 0.16.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+FLAGS_use_existing_db: 0
+FLAGS_db_disk: /mnt/ssd/xiaohu/novelsm
+FLAGS_db_mem:  /pmem/xiaohu/novelsm
+FLAGS_nvm_buffer_size:  67108864
+FLAGS_num_levels:  2
+FLAGS_num_read_threads:  1
+
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+[OVERALL], RunTime(ms), 174
+[OVERALL], Throughput(ops/sec), 5747.126436781609
+[TOTAL_GCS_PS_Scavenge], Count, 0
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.0
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 0
+[TOTAL_GC_TIME], Time(ms), 0
+[TOTAL_GC_TIME_%], Time(%), 0.0
+[READ], Operations, 1000
+[READ], AverageLatency(us), 120.74
+[READ], MinLatency(us), 20
+[READ], MaxLatency(us), 62623
+[READ], 95thPercentileLatency(us), 117
+[READ], 99thPercentileLatency(us), 378
+[READ], Return=OK, 1000
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 191.0
+[CLEANUP], MinLatency(us), 191
+[CLEANUP], MaxLatency(us), 191
+[CLEANUP], 95thPercentileLatency(us), 191
+[CLEANUP], 99thPercentileLatency(us), 191
